@@ -9,7 +9,7 @@ import java.nio.file.Paths;
 
 public class FileReadService {
     public String readFromFile(String fileName) {
-        Path path = Paths.get(Constants.BASE_PATH + fileName);
+        Path path = Paths.get(Constants.BASE_PATH + fileName + ".txt");
         try {
             return Files.readString(path);
         } catch (IOException ex) {
